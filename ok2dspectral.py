@@ -2,15 +2,15 @@
 #-*- coding: utf-8 -*-
 # **************************************************************************** #
 #                                                                              #
-#                              ch2dspectral.py                                 #
+#                              ok2dspectral.py                                 #
 #                                                                              #
 # **************************************************************************** #
 #                                                                              #
-# Semi-implicit pseudo-spectral scheme for solving the Cahn-Hilliard (CH)      #
+# Semi-implicit pseudo-spectral scheme for solving the Otha-Kawasaki (OK)      #
 # equation in two dimensions using Periodic boundary conditions (PBC).         # 
 # The equation is:                                                             #
 #                                                                              #
-#                   u_t = \nabla^2 (f(u) + K \nabla^2 u)                       #
+#            u_t = \nabla^2 (f(u) + K \nabla^2 u) + \beta\nabla_x u            #
 #                                                                              #
 # where f(u) = u^3 - u, and all constants, variables and parameters are dimen- #
 # sionless.                                                                    #                                                    
